@@ -1,5 +1,8 @@
 <h1>This is home page</h1>
 
+{% load static %}
+<img src="{% static 'portfolio/mypic.png' %}">
+
 {% for project in projects %}
 
 {{ project.title }}
